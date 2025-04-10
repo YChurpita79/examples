@@ -1,0 +1,141 @@
+body{
+    display: block;
+    background: none;
+    position: relative;
+    font-family:  Roboto Slab,sans-serif;
+}
+.pluginWrapper{
+    display: grid;
+    grid-template-rows: 15% 1fr 15%;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.pluginHeader{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+
+    background-color: #33333a;
+}
+.pluginHeader > img{
+    display: block;
+    position: relative;
+    width: 70%;
+}
+
+.pluginFooter{
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    background-color: #33333a;
+}
+.pluginFooter > a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 12px;
+    font-family: Roboto Slab,sans-serif;
+    color: #fed745;
+}
+
+.contentWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contentWrap > h1{
+    display: block;
+    position: relative;
+    font-size: 12px;
+    font-weight: normal;
+    color:gray;
+    text-indent: 20px;
+    word-wrap: break-word;
+    text-align: justify;
+    font-family: Roboto Slab,sans-serif;
+}
+.contentWrap > button{
+    display: block;
+    position: relative;
+    height: 30px;
+    width: auto;
+    outline: none;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.contentWrap > button:hover{
+    box-shadow: 0 0 15px gray;
+}
+
+
+.settingsWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.settingsWrap > li {
+    display: grid;
+    justify-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 85% 15%;
+    width: 100%;
+}
+.settingsWrap > li > h4 {
+    font-family: Roboto Slab,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color:gray;
+    display: block;
+    position: relative;
+
+}
+
+.settingsWrap > li > a {
+    text-decoration: none;
+    font-family: Roboto Slab,sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: #33333A;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #dbdbdb;
+    width: 25px;
+    border: solid 1px  #33333A;
+    height: 25px;
+    border-radius: 13px;
+    box-shadow: 0 0 5px #FBBE1D;
+}
+
+.superFunderWrapper{
+    display: block;
+    position: relative;
+    border: solid 1px red;
+}
+
