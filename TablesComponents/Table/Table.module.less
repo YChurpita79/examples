@@ -1,0 +1,71 @@
+@import "styles/common.less";
+
+.tableWrapper {
+  display: flex ;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 0 7px 13px @theme-shadow-color-17;
+  border-radius: 7px;
+  
+  .tableHeaderWrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    .tableHeader {
+      padding-left: 24px;
+      padding-right: 24px;
+      align-items: center;
+      display: grid;
+      position: relative;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 24px;
+      grid-auto-rows: minmax(64px, auto);
+      justify-content: space-between;
+      justify-items: flex-start;
+      width: 100%;
+      background-color: @theme-background-color-13;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+      
+      .tableHeaderCellWrapper {
+        display: inline-flex;
+        position: relative;
+        width: auto;
+        text-align: left;
+      }
+    }
+  }
+  
+  .tableBody {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.isShowGapBetweenRows {
+  box-shadow: 0px 7px 13px @theme-shadow-color-17;
+  border-radius: 7px;
+}
+
+.isShowRowBorder {
+  border-bottom: 1px solid @theme-border-color-6;
+}
+
+.showGap {
+  row-gap: 10px;
+}
+
+.staticTableRowWrapper {
+  width: 100%;
+}
+
+.selectAllMobileRow{
+  display: block;
+  position: relative;
+  width: 100%;
+}

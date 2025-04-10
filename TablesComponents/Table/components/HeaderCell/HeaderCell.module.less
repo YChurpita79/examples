@@ -1,0 +1,51 @@
+@import "styles/common.less";
+
+
+.headRow {
+  background-color: @theme-background-color-13;
+  width: auto;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  min-width: min-content;
+  column-gap: 4px;
+ 
+  
+  .contentWrapper {
+    display: inline-block;
+    position: relative;
+    word-break: break-word;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: @theme-text-color-64;
+  }
+  
+}
+
+.headCell {
+  cursor: pointer;
+  
+  .hover-supported({
+    color: @theme-text-color-1;
+    
+    svg {
+      fill: @theme-text-color-1;
+    }
+  });
+  
+  &.isColumnSticky {
+    background-color: inherit;
+    z-index: 100;
+  }
+}
+
+.isSorted {
+  color: @theme-text-color-1;
+  
+  & > span > svg {
+    fill: @theme-fill-color-7;
+  }
+}

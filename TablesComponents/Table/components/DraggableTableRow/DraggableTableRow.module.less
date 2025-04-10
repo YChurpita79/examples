@@ -1,0 +1,115 @@
+@import "styles/common.less";
+
+.rowWrapper {
+  display: grid;
+  position: relative;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  grid-auto-rows: minmax(64px, auto);
+  justify-content: space-between;
+  justify-items: flex-start;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: @theme-background-color-13;
+  
+  &:nth-child(1){
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  
+  &:nth-last-child(1){
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  .screen-sm({
+    &:nth-child(1){
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  })
+  
+}
+
+.isSelected {
+  background-color: @theme-background-color-19;
+}
+
+.isShowGapBetweenRows {
+  box-shadow: 0px 7px 13px @theme-shadow-color-17;
+  border-radius: 7px;
+}
+
+.isShowRowBorder {
+  border-bottom: 1px solid @theme-border-color-6;
+}
+
+.DraggingRow{
+  background: rgba(127, 207, 250, 0.3);
+}
+
+.cellWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+}
+
+.cellText {
+  .truncate-text(2);
+}
+
+.arrowOpened {
+  fill: @theme-fill-color-3;
+}
+
+.contentContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  column-gap: 24px;
+}
+
+.togglerWrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.toggler {
+  width: 100%;
+  overflow: hidden;
+  padding-right: 0;
+  padding-left: 0;
+  
+  &.isSelected {
+    background-color: @theme-background-color-19;
+  }
+  
+  .screen-custom(1200px, {
+    padding-right: 0;
+    padding-left: 0;
+  });
+}
+
+.rowBorder {
+  border-bottom: 1px solid @theme-border-color-6;
+}
+
+.isExpanded {
+  height: auto !important;
+}
+
+.rowExpanded {
+  position: relative;
+  background: @theme-background-color-13;
+  z-index: 200;
+  box-shadow: 2px 4px 24px 1px rgba(63, 75, 128, 0.20);
+  border-radius: 5px;
+  width: calc(100% + 20px);
+  left: -10px;
+  padding-bottom: 24px;
+}
