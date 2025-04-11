@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RingDiagram > should be rendered 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="48"
+    version="1.1"
+    viewBox="0 0 48 48"
+    width="48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      r="21.5"
+      stroke="#D9DFE8"
+      stroke-dasharray="135.0884841043611 0"
+      stroke-dashoffset="33.772121026090275"
+      stroke-linecap="round"
+      stroke-width="5"
+    />
+    <circle
+      cx="24"
+      cy="24"
+      r="21.5"
+      stroke="#727272"
+      stroke-dasharray="67.54424205218055 67.54424205218055"
+      stroke-dashoffset="-101.31636307827083"
+      stroke-linecap="round"
+      stroke-width="5"
+    />
+  </svg>
+</div>
+`;
