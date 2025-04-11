@@ -1,4 +1,4 @@
-import {SelectContentType} from "./query";
+import {SelectContentType} from "./queryType";
 
 export const selectContent: SelectContentType = ({subCategory, technology, isQueryEmpty}) => {
     const whereString = !isQueryEmpty ? ';' : `where technology.id  = '${subCategory}' and technology.id = '${technology}';`
